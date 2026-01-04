@@ -5,6 +5,7 @@ import Features from "./components/Features";
 import Portfolio from "./components/Portfolio";
 import Footer from "./components/Footer";
 import './App.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
