@@ -16,14 +16,14 @@ function Hobbies() {
           <HobbyCard
             image="/images/Karate.JPG"
             title="Karate"
-            description="I started Karate when I was a child. I am a black belt and a karate coach in Kuzi Sport."
+            description="I began practicing Karate as a child at Sertdemir Karate Club in Istanbul. Since then, it has become a central part of my life. I am now a black belt and a coach at Goats Karate Team in Poznań."
             link="https://medium.com/@fatihkaganemre/an-insightful-approach-to-kumite-training-e0f2209558a0"
           />
 
           <HobbyCard
             image="/images/Dance.jpg"
             title="Dance"
-            description="I met dancing thanks to my fiancée. We love bachata, salsa and kizomba."
+            description="I met dancing thanks to my fiancée. We love dancing bachata, salsa and kizomba."
           />
 
           <HobbyCard

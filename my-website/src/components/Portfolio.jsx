@@ -22,7 +22,7 @@ const projects = [
     title: "Goats Karate Team Poznan - Official Website",
     description: "A professional website for Goats Karate Team Poznań, showcasing classes, schedules, and online registration. Developed with a clean, responsive design to provide an easy navigation experience.",
     tech: ["React", "Node.js & Express", "Google Cloud Storage", "Firebase", "Bootstrap / CSS"],
-    images: [],
+    images: ["./images/GoatsLogo.png"],
     link: "https://www.goatskarate.pl/",
     colClass: "col-lg-10 col-sm-12"
   }
@@ -38,9 +38,11 @@ function PortfolioCard({ project }) {
           <li key={idx}>{techItem}</li>
         ))}
       </ul>
-      {project.images.map((img, idx) => (
-        <img key={idx} src={img} alt={`${project.title} screenshot ${idx + 1}`} className="portfolio-img" />
-      ))}
+      <div>
+        {project.images.map((img, idx) => (
+            <img key={idx} src={img} alt={`${project.title} screenshot ${idx + 1}`} className="portfolio-img" />
+        ))}
+      </div>
       {project.link && (
         <a 
           href={project.link} 

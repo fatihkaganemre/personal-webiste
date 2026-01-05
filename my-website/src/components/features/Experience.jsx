@@ -21,7 +21,7 @@ function Experience() {
         </p>
 
         <h6 className="dm-serif-font">
-          N7 Mobile — Senior iOS Developer
+          N7 Mobile — iOS Developer
         </h6>
         <p className="noto-serif-font">
           Oct 2021 – May 2024 · Warsaw  

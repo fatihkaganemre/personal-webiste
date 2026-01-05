@@ -1,5 +1,6 @@
 .portfolio-img {
   max-height: 350px;
+  max-width: 250px;
   object-fit: cover;
   border: 1px solid #ddd;
   border-radius: 20px;
@@ -11,20 +12,20 @@
   transform: scale(1.03);
 }
 
+/* BUTTON */
 .portfolio-btn {
   display: inline-block;
-  padding: 10px 20px;
-  margin-top: 10px;
-  background-color: #57b5f8;
+  margin-top: 12px;
+  padding: 8px 14px;
+  background-color: #405d72;
   color: white;
-  text-decoration: none;
   border-radius: 6px;
-  font-weight: 500;
-  transition: background-color 0.25s;
+  text-decoration: none;
+  font-size: 0.9rem;
 }
 
 .portfolio-btn:hover {
-  background-color: #3fa2e8;
+  background-color: #2f4556;
 }
 
 /* Card spacing */

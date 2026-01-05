@@ -10,16 +10,6 @@ function LinksBar() {
     >
       <div className="container">
         <ul className="nav justify-content-lg-center justify-content-sm-left dm-serif-font">
-           <li className="nav-item">
-            <NavLink
-              to="/"
-              className="nav-link mb-2"
-              style={linkStyle}
-            >
-              Home
-            </NavLink>
-          </li>
-        
           <li className="nav-item">
             <NavLink
               to="/contact"
