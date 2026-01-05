@@ -1,22 +1,69 @@
-import React from "react";
+import { NavLink } from "react-router-dom";
 
 function LinksBar() {
+  const linkStyle = { color: "#57b5f8" };
+
   return (
-    <section className="links-bar" style={{ backgroundColor: "#405D72", color: "white" }}>
+    <section
+      className="links-bar"
+      style={{ backgroundColor: "#405D72", color: "white" }}
+    >
       <div className="container">
         <ul className="nav justify-content-lg-center justify-content-sm-left dm-serif-font">
-          <li className="nav-item">
-            <a className="nav-link active mb-2" href="./public/contact.html" style={{ color: "#57b5f8" }}>Contact</a>
+           <li className="nav-item">
+            <NavLink
+              to="/"
+              className="nav-link mb-2"
+              style={linkStyle}
+            >
+              Home
+            </NavLink>
           </li>
+        
           <li className="nav-item">
-            <a className="nav-link mb-2" href="https://www.linkedin.com/in/fatih-ka%C4%9Fan-emre-b551667b/" style={{ color: "#57b5f8" }}>Linkedin</a>
+            <NavLink
+              to="/contact"
+              className="nav-link mb-2"
+              style={linkStyle}
+            >
+              Contact
+            </NavLink>
           </li>
+
           <li className="nav-item">
-            <a className="nav-link mb-2" href="https://github.com/fatihkaganemre" style={{ color: "#57b5f8" }}>Github</a>
+            <a
+              className="nav-link mb-2"
+              href="https://www.linkedin.com/in/fatih-ka%C4%9Fan-emre-b551667b/"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={linkStyle}
+            >
+              Linkedin
+            </a>
           </li>
+
           <li className="nav-item">
-            <a className="nav-link mb-2" href="./public/hobbies.html" style={{ color: "#57b5f8" }}>Hobbies</a>
+            <a
+              className="nav-link mb-2"
+              href="https://github.com/fatihkaganemre"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={linkStyle}
+            >
+              Github
+            </a>
           </li>
+
+          <li className="nav-item">
+            <NavLink
+              to="/hobbies"
+              className="nav-link mb-2"
+              style={linkStyle}
+            >
+              Hobbies
+            </NavLink>
+          </li>
+
         </ul>
       </div>
     </section>

@@ -1,3 +1,7 @@
+import React from "react";
+import { Link } from "react-router-dom";
+import "./Contact.css";
+
 function Contact() {
   const myMail = "fatih.kagan.emre@gmail.com";
 
@@ -15,35 +19,37 @@ function Contact() {
   };
 
   return (
-    <div className="container mt-5">
-      <h1 className="dm-serif-font">Contact</h1>
-      <hr />
+    <div className="contact-page">
+      <div className="contact-container">
+        <Link to="/" className="back-btn">← Back to Home</Link>
 
-      <section className="noto-serif-font">
-        <p>Milczańska, Poznań 61-131 / POLAND</p>
-        <p>+48 791 650 862</p>
-        <p>fatih.kagan.emre@gmail.com</p>
-      </section>
+        <h1 className="dm-serif-font text-center">Contact</h1>
+        <hr />
 
-      <form className="mt-4" onSubmit={handleSubmit}>
-        <input
-          type="text"
-          name="title"
-          placeholder="Title"
-          className="form-control mb-3"
-          required
-        />
-        <textarea
-          name="content"
-          placeholder="Content"
-          rows="10"
-          className="form-control mb-3"
-          required
-        />
-        <button type="submit" className="btn btn-primary">
-          Submit
-        </button>
-      </form>
+        <section className="contact-info noto-serif-font">
+          <p>Milczańska, Poznań 61-131 / POLAND</p>
+          <p>+48 791 650 862</p>
+          <p>fatih.kagan.emre@gmail.com</p>
+        </section>
+
+        <form className="contact-form noto-serif-font" onSubmit={handleSubmit}>
+          <input
+            type="text"
+            name="title"
+            placeholder="Title"
+            required
+          />
+
+          <textarea
+            name="content"
+            placeholder="Content"
+            rows="8"
+            required
+          />
+
+          <button type="submit">Send email</button>
+        </form>
+      </div>
     </div>
   );
 }

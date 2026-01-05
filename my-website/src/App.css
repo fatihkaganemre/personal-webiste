@@ -1,19 +1,6 @@
-
- .profile-img {
-   border-radius: 20px;
-   width: 50%;
- }
  
  .warning {
    color: rgb(202, 29, 29);
- }
-
- .portfolio-img {
-    height: 350px;
-    border-style: solid;
-    border-width: 1px;
-    border-radius: 20px;
-    margin: 10px;
  }
 
  .dm-serif-font {
@@ -29,9 +16,5 @@
   font-style: normal;
 }
 
-@media (max-width: 600px) {
-  .portfolio-img {
-    height: 250px;
-  }
-}
+
 

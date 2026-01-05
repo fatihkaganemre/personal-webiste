@@ -1,0 +1,88 @@
+/* PAGE */
+.hobbies-page {
+  min-height: 100vh;
+  background-color: #405d72;
+  padding: 40px 0;
+  color: white;
+}
+
+/* BACK BUTTON */
+.back-btn {
+  display: inline-block;
+  margin-bottom: 20px;
+  color: #57b5f8;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.back-btn:hover {
+  text-decoration: underline;
+}
+
+/* GRID */
+.hobbies-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+/* CARD */
+.hobby-card {
+  background: white;
+  color: #333;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hobby-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.35);
+}
+
+.hobby-card img {
+  width: 100%;
+  object-fit: cover;
+}
+
+/* CARD BODY */
+.hobby-card-body {
+  padding: 20px;
+}
+
+.hobby-card-body h5 {
+  margin-bottom: 10px;
+}
+
+.hobby-card-body p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* BUTTON */
+.hobby-btn {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 8px 14px;
+  background-color: #405d72;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.hobby-btn:hover {
+  background-color: #2f4556;
+}
+
+/* FONTS */
+.dm-serif-font {
+  font-family: "DM Serif Display", serif;
+}
+
+.noto-serif-font {
+  font-family: "Source Serif 4", serif;
+  font-weight: 300;
+}

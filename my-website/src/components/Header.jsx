@@ -1,4 +1,5 @@
 import React from "react";
+import './Header.css';
 
 function Header() {
   return (
@@ -15,11 +16,9 @@ function Header() {
           </div>
           <div className="col-10 col-sm-8 col-lg-6">
             <img
-              src="./assets/images/Profile.jpg"
-              className="d-block mx-lg-auto img-fluid profile-img"
+              src="./images/Profile.jpg"
+              className="d-block mx-lg-auto img-fluid header-profile-img"
               alt="Profile"
-              width="300"
-              height="300"
               loading="lazy"
             />
           </div>

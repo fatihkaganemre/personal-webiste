@@ -1,20 +1,19 @@
 import React from "react";
-import Header from "./components/Header";
-import LinksBar from "./components/LinksBar";
-import Features from "./components/Features";
-import Portfolio from "./components/Portfolio";
-import Footer from "./components/Footer";
+import { Routes, Route } from "react-router-dom";
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Contact from "./pages/Contact";
+import Hobbies from "./pages/Hobbies/Hobbies";
+import Home from "./components/Home";
 
 function App() {
   return (
     <div>
-      <Header />
-      <LinksBar />
-      <Features />
-      <Portfolio />
-      <Footer />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/hobbies" element={<Hobbies />} />
+      </Routes>
     </div>
   );
 }
