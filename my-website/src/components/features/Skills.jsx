@@ -12,11 +12,14 @@ function Skills() {
 
         <ul className="noto-serif-font">
           <li>Swift, Xcode, UIKit, SwiftUI</li>
-          <li>Git, GitHub, GitLab, Bitbucket</li>
-          <li>Combine, RxSwift, Async/Await</li>
-          <li>MVC, MVVM, VIPER, TCA</li>
-          <li>Unit, Integration, UI Testing</li>
-          <li>CI/CD (GitHub Actions, GitLab CI, Fastlane)</li>
+          <li>Git, GitLab, GitHub, Bitbucket</li>
+          <li>RxSwift, ReactiveSwift, Combine, Async/Await</li>
+          <li>MVC, MVVM , VIPER, MVP, TCA</li>
+          <li>Unit, Integration, Snapshot, UI Testing</li>
+          <li>CI/CD (GitLab CI, Travis, Github Actions, Circle CI, Azure, Fastlane)</li>
+          <li>REST APIs, Alamofire, URLSession</li>
+          <li>SPM, Cocoapods, Carthage</li>
+          <li>SwiftData, Charts</li>
         </ul>
 
         <h5 className="dm-serif-font mt-3">Others</h5>
@@ -24,7 +27,6 @@ function Skills() {
           <li>HTML, CSS, JavaScript, React</li>
           <li>Node.js, Express</li>
           <li>PostgreSQL, SQL</li>
-          <li>Python, Django</li>
         </ul>
       </div>
     </div>
