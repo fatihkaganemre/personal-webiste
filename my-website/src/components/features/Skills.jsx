@@ -3,14 +3,12 @@ import "./Skills.css";
 
 const skillGroups = [
   { label: "Core",            items: ["Swift", "Xcode", "UIKit", "SwiftUI"] },
-  { label: "Reactive",        items: ["RxSwift", "Combine", "Async/Await", "ReactiveSwift"] },
+  { label: "Reactive",        items: ["Async/Await", "Combine", "RxSwift", "ReactiveSwift"] },
   { label: "Architecture",    items: ["MVVM", "VIPER", "TCA", "MVC", "MVP"] },
   { label: "Testing",         items: ["Unit", "Integration", "Snapshot", "UI Testing"] },
   { label: "CI / CD",         items: ["GitLab CI", "GitHub Actions", "Azure", "Fastlane", "Circle CI"] },
-  { label: "Networking",      items: ["REST", "Alamofire", "URLSession"] },
-  { label: "Packages",        items: ["SPM", "CocoaPods", "Carthage"] },
   { label: "Version Control", items: ["Git", "GitHub", "GitLab", "Bitbucket"] },
-  { label: "Other",           items: ["React", "Node.js", "PostgreSQL", "HTML/CSS"] },
+  { label: "FullStack",       items: ["React", "Node.js", "PostgreSQL", "HTML/CSS", "ExpressJS", "TypeScript", "JavaScript"] },
 ];
 
 const SkillsIcon = () => (
