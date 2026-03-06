@@ -1,44 +1,230 @@
-.portfolio-img {
-  max-height: 350px;
-  max-width: 250px;
-  object-fit: cover;
-  border: 1px solid #ddd;
-  border-radius: 20px;
-  margin: 10px;
-  transition: transform 0.3s;
+/* ── Portfolio Section ── */
+.portfolio {
+  padding-bottom: 5rem;
 }
 
-.portfolio-img:hover {
-  transform: scale(1.03);
+/* ── Hero Banner ── */
+.portfolio-hero {
+  padding: 4rem 0 3rem;
+  text-align: center;
+  border-bottom: 1px solid rgba(64, 93, 114, 0.15);
+  margin-bottom: 3.5rem;
 }
 
-/* BUTTON */
+.portfolio-hero h1 {
+  font-size: clamp(2.2rem, 5vw, 3.2rem);
+  letter-spacing: -0.01em;
+  margin-bottom: 0.75rem;
+  color: #1a2a35;
+}
+
+.portfolio-hero p {
+  font-size: 1rem;
+  color: #5a7080;
+  max-width: 520px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+/* ── Grid ── */
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 1.75rem;
+}
+
+/* ── Card ── */
+.portfolio-card {
+  background: #fff;
+  border: 1px solid #e8edf0;
+  border-radius: 12px;
+  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: box-shadow 0.25s ease, transform 0.25s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #405d72, #6b93ad);
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+.portfolio-card:hover {
+  box-shadow: 0 8px 32px rgba(64, 93, 114, 0.12);
+  transform: translateY(-3px);
+}
+
+.portfolio-card:hover::before {
+  opacity: 1;
+}
+
+/* Wide card spans full width */
+.portfolio-card.card-wide {
+  grid-column: 1 / -1;
+  flex-direction: row;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+@media (max-width: 700px) {
+  .portfolio-card.card-wide {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}
+
+/* ── Card content area ── */
+.card-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ── Title ── */
+.card-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #1a2a35;
+  margin-bottom: 0.5rem;
+  line-height: 1.3;
+}
+
+/* ── Description ── */
+.card-desc {
+  font-size: 0.85rem;
+  color: #5a7080;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+  flex: 1;
+}
+
+/* ── Tech tags ── */
+.tech-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 1.25rem;
+  list-style: none;
+  padding: 0;
+}
+
+.tech-tag {
+  font-size: 0.68rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+  background: #eef3f6;
+  color: #405d72;
+  border: 1px solid #d0dde5;
+  white-space: nowrap;
+}
+
+/* ── Visit button ── */
 .portfolio-btn {
-  display: inline-block;
-  margin-top: 12px;
-  padding: 8px 14px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: auto;
+  padding: 0.5rem 1rem;
   background-color: #405d72;
-  color: white;
+  color: #fff;
   border-radius: 6px;
   text-decoration: none;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  width: fit-content;
+  letter-spacing: 0.02em;
+  transition: background-color 0.2s ease, gap 0.2s ease;
 }
 
 .portfolio-btn:hover {
   background-color: #2f4556;
+  gap: 0.6rem;
 }
 
-/* Card spacing */
-.portfolio-card {
-  padding: 15px;
-  border-radius: 15px;
-  background-color: rgba(255,255,255,0.05);
-  margin-bottom: 30px;
+.portfolio-btn svg {
+  flex-shrink: 0;
 }
 
-/* Responsive */
+/* ── Images area ── */
+.portfolio-images {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* App screenshots (tall, portrait) */
+.portfolio-card:not(.card-wide) .portfolio-images {
+  justify-content: center;
+  margin-top: 1.25rem;
+}
+
+.portfolio-img {
+  object-fit: cover;
+  border-radius: 14px;
+  border: 1px solid #e0e8ed;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Tall screenshots for iOS apps */
+.portfolio-card:not(.card-wide) .portfolio-img {
+  max-height: 300px;
+  max-width: 140px;
+  width: 100%;
+}
+
+/* Logo/icon for website cards */
+.card-wide .portfolio-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 20px;
+  object-fit: contain;
+  flex-shrink: 0;
+  background: #f4f7f9;
+  padding: 6px;
+}
+
+.portfolio-img:hover {
+  transform: scale(1.04);
+  box-shadow: 0 6px 20px rgba(64, 93, 114, 0.15);
+}
+
+/* ── AI badge ── */
+.ai-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 0.62rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #8a9fac;
+  margin-bottom: 0.6rem;
+}
+
+.ai-badge::before {
+  content: '✦';
+  color: #b8964e;
+  font-size: 0.55rem;
+}
+
+/* ── Responsive ── */
 @media (max-width: 600px) {
-  .portfolio-img {
-    max-height: 250px;
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .portfolio-card:not(.card-wide) .portfolio-img {
+    max-height: 220px;
+    max-width: 110px;
   }
 }
