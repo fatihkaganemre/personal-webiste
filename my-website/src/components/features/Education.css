@@ -1,0 +1,50 @@
+/* ── Education entries ── */
+.edu-item {
+  padding-bottom: 1.25rem;
+  margin-bottom: 1.25rem;
+  border-bottom: 1px solid var(--rule);
+}
+
+.edu-item:last-of-type {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.edu-school {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--ink);
+  line-height: 1.35;
+  margin-bottom: 0.2rem;
+}
+
+.edu-degree {
+  font-size: 0.75rem;
+  color: var(--ink-mid);
+  margin-bottom: 0.2rem;
+  line-height: 1.5;
+}
+
+.edu-years {
+  font-size: 0.65rem;
+  font-weight: 500;
+  color: var(--primary);
+  background: var(--tag-bg);
+  border: 1px solid var(--tag-border);
+  border-radius: 4px;
+  padding: 0.15rem 0.5rem;
+  display: inline-block;
+}
+
+/* ── Labour market note ── */
+.edu-note {
+  margin-top: 1.5rem;
+  padding: 0.75rem 1rem;
+  border-left: 3px solid var(--primary);
+  background: rgb(246, 195, 195);
+  border-radius: 0 6px 6px 0;
+  font-size: 0.75rem;
+  color: var(--ink-mid);
+  line-height: 1.6;
+}

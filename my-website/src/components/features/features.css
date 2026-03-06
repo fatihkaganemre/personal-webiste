@@ -1,0 +1,118 @@
+/* ── Shared CSS variables ── */
+:root {
+  --primary:    #405d72;
+  --primary-dk: #2f4556;
+  --ink:        #1a2a35;
+  --ink-mid:    #5a7080;
+  --ink-soft:   #8a9fac;
+  --rule:       #e8edf0;
+  --tag-bg:     #eef3f6;
+  --tag-border: #d0dde5;
+  --surface:    #fff;
+  --bg:         #f4f7f9;
+}
+
+/* ── Features wrapper ── */
+.features-section {
+  padding: 5rem 0;
+  background: var(--bg);
+}
+
+/* ── Three-column grid ── */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  align-items: start;
+}
+
+@media (max-width: 900px) {
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ── Card base (shared by all three panels) ── */
+.feature-card {
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-radius: 12px;
+  padding: 1.75rem;
+  position: relative;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.55s ease, transform 0.55s ease,
+              box-shadow 0.25s ease;
+}
+
+.feature-card.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.feature-card:nth-child(2) { transition-delay: 0.1s; }
+.feature-card:nth-child(3) { transition-delay: 0.2s; }
+
+.feature-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--primary), #6b93ad);
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+.feature-card:hover {
+  box-shadow: 0 8px 32px rgba(64, 93, 114, 0.11);
+}
+
+.feature-card:hover::before {
+  opacity: 1;
+}
+
+/* ── Card section heading ── */
+.feature-card-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--rule);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.feature-card-title svg {
+  color: var(--primary);
+  flex-shrink: 0;
+}
+
+/* ── Shared tag style ── */
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tag {
+  font-size: 0.68rem;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+  background: var(--tag-bg);
+  color: var(--primary);
+  border: 1px solid var(--tag-border);
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.tag:hover {
+  background: #dde8ef;
+  border-color: var(--primary);
+}
