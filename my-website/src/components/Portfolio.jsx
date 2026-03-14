@@ -38,7 +38,7 @@ const projects = [
       "Professional website for Trader Ece, designed for a clean and responsive experience across all devices. Component architecture and design system developed with AI assistance.",
     tech: ["React", "TypeScript", "Bootstrap / CSS"],
     images: ["./images/TraderEceLogo.png"],
-    link: "https://trader-ece.vercel.app/",
+    link: "https://www.trader-ece.com/",
     wide: true,
     aiAssisted: true,
   },
