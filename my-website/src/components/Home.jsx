@@ -3,6 +3,7 @@ import LinksBar from "./LinksBar";
 import Features from "./features/Features";
 import Portfolio from "./Portfolio";
 import Footer from "./Footer";
+import Contact from "../pages/Contact";
 
 function Home() {
   return (
@@ -11,6 +12,7 @@ function Home() {
       <LinksBar />
       <Features />
       <Portfolio />
+      <Contact />
       <Footer />
     </div>
   );

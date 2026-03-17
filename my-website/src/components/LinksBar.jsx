@@ -11,16 +11,6 @@ function LinksBar() {
       <div className="container">
         <ul className="nav justify-content-lg-center justify-content-sm-left dm-serif-font">
           <li className="nav-item">
-            <NavLink
-              to="/contact"
-              className="nav-link mb-2"
-              style={linkStyle}
-            >
-              Contact
-            </NavLink>
-          </li>
-
-          <li className="nav-item">
             <a
               className="nav-link mb-2"
               href="https://www.linkedin.com/in/fatih-ka%C4%9Fan-emre-b551667b/"
