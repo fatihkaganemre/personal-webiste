@@ -9,9 +9,9 @@ import "./Contact.css";
 //   TEMPLATE_ID : Email Templates → your template ID
 //   PUBLIC_KEY  : Account → API Keys → Public Key
 // ─────────────────────────────────────────────────────────────
-const SERVICE_ID  = import.meta.env.EMAILJS_SERVICE_ID;
-const TEMPLATE_ID = import.meta.env.EMAILJS_TEMPLATE_ID;
-const PUBLIC_KEY  = import.meta.env.EMAILJS_PUBLIC_KEY;
+const SERVICE_ID  = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+const TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+const PUBLIC_KEY  = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
 const SendIcon = () => (
   <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
