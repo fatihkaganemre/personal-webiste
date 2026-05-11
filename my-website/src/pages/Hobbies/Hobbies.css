@@ -61,6 +61,15 @@
   line-height: 1.5;
 }
 
+.hobby-inline-link {
+  color: #9a6a00;
+  font-weight: 600;
+}
+
+.hobby-inline-link:hover {
+  color: #7a5200;
+}
+
 /* BUTTON */
 .hobby-btn {
   display: inline-block;
