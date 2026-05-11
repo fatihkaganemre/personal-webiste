@@ -51,3 +51,8 @@
   color: var(--ink-mid);
   line-height: 1.7;
 }
+
+.exp-desc-list {
+  margin: 0;
+  padding-left: 1rem;
+}

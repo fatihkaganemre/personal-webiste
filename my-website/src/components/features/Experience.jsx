@@ -5,22 +5,36 @@ const experiences = [
   {
     company: "William Hill",
     role: "iOS Developer",
-    period: "Aug 2024 – Present · Kraków",
-    description: "Working as an iOS developer on production-scale applications.",
+    period: "Krakow | Aug 2024 – Present",
+    description: [
+      "Working as an iOS developer on production-scale applications.",
+      "Unified multiple applications under a single codebase to improve development efficiency.",
+      "Worked with SwiftUI and managed modular dependencies with Swift Package Manager (SPM).",
+      "Managed project workflows using Jira and automated delivery with GitLab CI.",
+      "Maintained high code quality through the implementation of unit tests.",
+    ],
   },
   {
     company: "N7 Mobile",
     role: "iOS Developer",
-    period: "Oct 2021 – May 2024 · Warsaw",
-    description:
-      "Banking application development using Xcode, Azure CI, SonarCloud, SPM, Jira, and Figma. Frameworks: Combine, Firebase, Lottie, AppAuth, Intercom. MVVM architecture with comprehensive unit test coverage.",
+    period: "Warsaw | Oct 2021 – May 2024",
+    description: [
+      "Developed banking applications utilizing the MVVM + Coordinator pattern.",
+      "Built reactive interfaces using Combine + UIKit while managing the transition to SwiftUI.",
+      "Guaranteed application reliability through unit tests.",
+      "Streamlined deployments using Azure CI and managed dependencies with CocoaPods and SPM.",
+    ],
   },
   {
     company: "AppUnite",
     role: "iOS Developer",
-    period: "May 2017 – Sept 2021 · Poznań",
-    description:
-      "Diverse portfolio spanning booking, social media, e-learning, and e-commerce. Authored extensive test suites across multiple frameworks.",
+    period: "Poznan | May 2017 – Sep 2021",
+    description: [
+      "Developed diverse applications across e-commerce, booking, social media, education, and banking sectors.",
+      "Utilized reactive frameworks including RxSwift and ReactiveSwift.",
+      "Implemented a comprehensive testing suite covering unit, UI, snapshot, and end-to-end testing.",
+      "Managed CI/CD pipelines via GitLab CI and Circle CI and handled dependencies with CocoaPods and Carthage.",
+    ],
   },
 ];
 
@@ -39,7 +53,13 @@ function ExperienceItem({ company, role, period, description }) {
         <span className="exp-period">{period}</span>
       </div>
       <div className="exp-role">{role}</div>
-      <div className="exp-desc">{description}</div>
+      <ul className="exp-desc-list">
+        {description.map((item) => (
+          <li key={item} className="exp-desc">
+            {item}
+          </li>
+        ))}
+      </ul>
     </div>
   );
 }
