@@ -3,26 +3,6 @@ import "./Portfolio.css";
 
 const projects = [
   {
-    title: "FPlanner",
-    description:
-      "A training planning application designed for creating, editing, and executing sessions with multiple exercises. Built to explore SwiftUI data persistence and local notification scheduling.",
-    tech: ["SwiftUI", "SwiftData", "Local Notifications"],
-    images: ["./images/FPlanner1.png", "./images/FPlanner2.png"],
-    link: null,
-    wide: false,
-    aiAssisted: false,
-  },
-  {
-    title: "FTuner",
-    description:
-      "An instrument tuning app that visualises detected pitch in real time, helping musicians tune accurately. Developed as a deep-dive into audio processing and SwiftUI charting.",
-    tech: ["SwiftUI", "Charts", "AVFoundation"],
-    images: ["./images/FTuner.png"],
-    link: null,
-    wide: false,
-    aiAssisted: false,
-  },
-  {
     title: "Goats Karate Team Poznań",
     description:
       "Official website for Goats Karate Team Poznań — showcasing classes, schedules, and online registration. Clean, responsive design built for easy navigation and content management.",
