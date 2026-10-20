@@ -18,17 +18,26 @@
   background: var(--bg);
 }
 
-/* ── Three-column grid ── */
+/* ── Two-column grid: wide Experience panel, stacked side column ── */
 .features-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1.6fr 1fr;
   gap: 1.5rem;
   align-items: start;
+}
+
+/* Experience spans both rows on the left */
+.features-grid > .feature-card:first-child {
+  grid-row: 1 / 3;
 }
 
 @media (max-width: 900px) {
   .features-grid {
     grid-template-columns: 1fr;
+  }
+
+  .features-grid > .feature-card:first-child {
+    grid-row: auto;
   }
 }
 

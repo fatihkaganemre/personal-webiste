@@ -8,8 +8,8 @@ function Features() {
     <section className="features-section">
       <div className="container">
         <div className="features-grid">
-          <Skills />
           <Experience />
+          <Skills />
           <Education />
         </div>
       </div>
