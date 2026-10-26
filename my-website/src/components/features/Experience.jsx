@@ -12,7 +12,7 @@ const experiences = [
       "Build modular iOS features with SwiftUI and Swift Package Manager across the Vegas, ES, and UK apps.",
       "Serve as release captain for multiple releases, coordinating scope and readiness with developers and product managers and managing the CI release process.",
       "Deliver features as part of a 12-person iOS team.",
-      "Use Codex and GitLab CLI for branch management, agent-instruction updates, and AI-assisted implementation, reviews, and tests; manually validate generated changes and independently review teammates' code.",
+      "Use Codex, GitHub Copilot, and role-based multi-agent workflows for implementation, testing, and reviews; manage branches with GitLab CLI, verify AI output, and independently review teammates' code.",
     ],
   },
   {
