@@ -200,6 +200,12 @@
   box-shadow: 0 6px 20px rgba(64, 93, 114, 0.15);
 }
 
+.card-wide .portfolio-img-portrait {
+  object-fit: cover;
+  object-position: center 25%;
+  padding: 0;
+}
+
 /* ── AI badge ── */
 .ai-badge {
   display: inline-flex;

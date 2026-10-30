@@ -3,6 +3,18 @@ import "./Portfolio.css";
 
 const projects = [
   {
+    title: "Oscar Wong — Pianist",
+    description:
+      "An editorial-style website for pianist Oscar Wong, featuring his biography, concerts, and a contact form. Responsive design and development completed with AI assistance.",
+    tech: ["React", "TypeScript", "Vite", "Node.js & Express", "EmailJS", "CSS"],
+    images: ["./images/OscarWong.jpeg"],
+    imageAlt: "Portrait of pianist Oscar Wong",
+    imageClass: "portfolio-img-portrait",
+    link: "https://www.oscarwongpianist.com/",
+    wide: true,
+    aiAssisted: true,
+  },
+  {
     title: "Goats Karate Team Poznań",
     description:
       "Official website for Goats Karate Team Poznań — showcasing classes, schedules, and online registration. Clean, responsive design built for easy navigation and content management.",
@@ -41,8 +53,8 @@ function PortfolioCard({ project }) {
           <img
             key={idx}
             src={img}
-            alt={`${title} screenshot ${idx + 1}`}
-            className="portfolio-img"
+            alt={project.imageAlt || `${title} screenshot ${idx + 1}`}
+            className={`portfolio-img${project.imageClass ? ` ${project.imageClass}` : ""}`}
           />
         ))}
       </div>
