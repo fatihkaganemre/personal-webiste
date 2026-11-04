@@ -1,5 +1,6 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
+import { Analytics } from "@vercel/analytics/react";
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Hobbies from "./pages/Hobbies/Hobbies";
@@ -12,6 +13,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/hobbies" element={<Hobbies />} />
       </Routes>
+      <Analytics />
     </div>
   );
 }
