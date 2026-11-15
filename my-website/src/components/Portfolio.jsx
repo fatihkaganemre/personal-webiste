@@ -3,6 +3,19 @@ import "./Portfolio.css";
 
 const projects = [
   {
+    title: "Baglamator",
+    category: "mobile",
+    description:
+      "An iOS tuner for bağlama players, with real-time note detection, precise feedback in cents, and clear visual indicators to help musicians tune confidently during practice or performance.",
+    tech: ["Swift 6", "SwiftUI", "MVVM", "AVFoundation", "Accelerate", "Swift Concurrency"],
+    images: ["./images/Baglamator.jpg"],
+    imageAlt: "Baglamator app icon",
+    link: "https://apps.apple.com/us/app/baglamator/id6826222131",
+    linkLabel: "View on App Store",
+    wide: true,
+    aiAssisted: false,
+  },
+  {
     title: "Oscar Wong — Pianist",
     description:
       "An editorial-style website for pianist Oscar Wong, featuring his biography, concerts, and a contact form. Responsive design and development completed with AI assistance.",
@@ -36,6 +49,19 @@ const projects = [
   },
 ];
 
+const projectSections = [
+  {
+    id: "mobile",
+    title: "Mobile Applications",
+    description: "Native iOS experiences, built around everyday needs.",
+  },
+  {
+    id: "web",
+    title: "Web & Full-Stack Projects",
+    description: "From personal websites to platforms that connect communities.",
+  },
+];
+
 const ArrowIcon = () => (
   <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M2.5 9.5L9.5 2.5M9.5 2.5H4M9.5 2.5V8" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
@@ -50,12 +76,13 @@ function PortfolioCard({ project }) {
       {/* Images */}
       <div className="portfolio-images">
         {images.map((img, idx) => (
+          <div className="portfolio-icon-glass" key={idx}>
           <img
-            key={idx}
             src={img}
             alt={project.imageAlt || `${title} screenshot ${idx + 1}`}
             className={`portfolio-img${project.imageClass ? ` ${project.imageClass}` : ""}`}
           />
+          </div>
         ))}
       </div>
 
@@ -65,7 +92,7 @@ function PortfolioCard({ project }) {
           <span className="ai-badge">Built with AI assistance</span>
         )}
 
-        <h2 className="card-title dm-serif-font">{title}</h2>
+        <h3 className="card-title dm-serif-font">{title}</h3>
         <p className="card-desc noto-serif-font">{description}</p>
 
         <ul className="tech-list">
@@ -81,7 +108,7 @@ function PortfolioCard({ project }) {
             rel="noopener noreferrer"
             className="portfolio-btn"
           >
-            Visit Website <ArrowIcon />
+            {project.linkLabel || "Visit Website"} <ArrowIcon />
           </a>
         )}
       </div>
@@ -101,11 +128,19 @@ function Portfolio() {
           </p>
         </div>
 
-        <div className="portfolio-grid">
-          {projects.map((project, idx) => (
-            <PortfolioCard key={idx} project={project} />
-          ))}
-        </div>
+        {projectSections.map((section) => (
+          <section className="portfolio-category" key={section.id} aria-labelledby={`portfolio-${section.id}`}>
+            <div className="portfolio-category-heading">
+              <h2 id={`portfolio-${section.id}`} className="dm-serif-font">{section.title}</h2>
+              <p>{section.description}</p>
+            </div>
+            <div className="portfolio-grid">
+              {projects
+                .filter((project) => (project.category || "web") === section.id)
+                .map((project) => <PortfolioCard key={project.title} project={project} />)}
+            </div>
+          </section>
+        ))}
       </div>
     </section>
   );
