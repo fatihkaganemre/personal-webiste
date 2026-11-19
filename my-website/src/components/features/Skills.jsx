@@ -7,6 +7,10 @@ const skillGroups = [
   { label: "Architecture",    items: ["MVVM", "VIPER", "TCA", "MVC", "MVP"] },
   { label: "Testing",         items: ["Unit", "Integration", "Snapshot", "UI Testing"] },
   { label: "CI / CD",         items: ["GitLab CI", "GitHub Actions", "Azure", "Fastlane", "Circle CI"] },
+  {
+    label: "AI-assisted development",
+    items: ["OpenAI Codex", "GitHub Copilot Custom Agents", "Repository Instructions", "Agent Handoffs", "AI-assisted Code Review", "Test Planning"],
+  },
   { label: "Version Control", items: ["Git", "GitHub", "GitLab", "Bitbucket"] },
   { label: "FullStack",       items: ["React", "Node.js", "PostgreSQL", "HTML/CSS", "ExpressJS", "TypeScript", "JavaScript"] },
 ];

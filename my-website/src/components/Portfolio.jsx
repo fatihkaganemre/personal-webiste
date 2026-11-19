@@ -6,14 +6,14 @@ const projects = [
     title: "Baglamator",
     category: "mobile",
     description:
-      "An iOS tuner for bağlama players, with real-time note detection, precise feedback in cents, and clear visual indicators to help musicians tune confidently during practice or performance.",
-    tech: ["Swift 6", "SwiftUI", "MVVM", "AVFoundation", "Accelerate", "Swift Concurrency"],
+      "An iOS tuner for bağlama players with real-time note detection and visual feedback in cents. I use Codex alongside five custom GitHub Copilot agents for planning, design, architecture, implementation, and QA, with documented handoffs and build and test results.",
+    tech: ["Swift 6", "SwiftUI", "MVVM", "AVFoundation", "Accelerate", "Swift Concurrency", "OpenAI Codex", "GitHub Copilot"],
     images: ["./images/Baglamator.jpg"],
     imageAlt: "Baglamator app icon",
     link: "https://apps.apple.com/us/app/baglamator/id6826222131",
     linkLabel: "View on App Store",
     wide: true,
-    aiAssisted: false,
+    aiAssisted: true,
   },
   {
     title: "Oscar Wong — Pianist",
