@@ -142,8 +142,9 @@ function Portfolio() {
         <div className="portfolio-hero">
           <h1 className="dm-serif-font">Portfolio</h1>
           <p className="noto-serif-font">
-            A selection of my work — iOS applications, full-stack web projects,
-            and responsive design implementations.
+            A collection of products and experiments I’ve created across iOS,
+            web, and machine learning, shaped by curiosity, thoughtful design,
+            and a love for making technology useful.
           </p>
         </div>
 

@@ -5,7 +5,7 @@
   border-bottom: 1px solid var(--rule);
 }
 
-.edu-item:last-of-type {
+.edu-item:last-child {
   border-bottom: none;
   margin-bottom: 0;
   padding-bottom: 0;
@@ -41,10 +41,10 @@
 .edu-note {
   margin-top: 1.5rem;
   padding: 0.75rem 1rem;
-  border-left: 3px solid black;
-  background: #405D72;
+  border-left: 3px solid var(--primary);
+  background: var(--tag-bg);
   border-radius: 0 6px 6px 0;
   font-size: 0.75rem;
-  color: white;
+  color: var(--ink-mid);
   line-height: 1.6;
 }

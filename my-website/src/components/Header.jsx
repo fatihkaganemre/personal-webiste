@@ -11,7 +11,7 @@ function Header() {
               Fatih Kağan Emre
             </h1>
             <p className="lead noto-serif-font">
-              Hello, I am an iOS developer. I have a deep passion for technology and love creating high-quality mobile applications. I bring a mix of technical expertise and creativity to every project. Friendly and collaborative, I thrive in team settings. Let’s connect and chat about how I can help with your project needs!
+              I’m a software developer who enjoys turning thoughtful ideas into reliable, human-friendly products. From native iOS apps to web experiments and ML projects, I care about clean architecture, careful details, curiosity, and making complex technology feel simple.
             </p>
           </div>
           <div className="col-10 col-sm-8 col-lg-6">
