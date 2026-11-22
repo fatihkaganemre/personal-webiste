@@ -3,6 +3,20 @@ import "./Portfolio.css";
 
 const projects = [
   {
+    title: "BaglamaSoundML",
+    category: "ai",
+    description:
+      "An experimental ML and audio-synthesis project for generating bağlama sounds, detecting open-string tuning from microphone recordings, and comparing synthesized audio with recordings. Includes a Python playground and a reusable Swift 6 package.",
+    tech: ["Python", "NumPy", "PyTorch", "Swift 6", "Machine Learning", "Audio DSP", "Vite"],
+    images: ["./images/BaglamaSoundML.png"],
+    imageAlt: "BaglamaSoundML playground tools overview",
+    imageClass: "portfolio-img-project",
+    link: "https://github.com/fatihkaganemre/BaglamaSoundML",
+    linkLabel: "View on GitHub",
+    wide: true,
+    aiAssisted: true,
+  },
+  {
     title: "Baglamator",
     category: "mobile",
     description:
@@ -54,6 +68,11 @@ const projectSections = [
     id: "mobile",
     title: "Mobile Applications",
     description: "Native iOS experiences, built around everyday needs.",
+  },
+  {
+    id: "ai",
+    title: "AI & Machine Learning",
+    description: "Research projects spanning audio synthesis, machine learning, and developer tools.",
   },
   {
     id: "web",

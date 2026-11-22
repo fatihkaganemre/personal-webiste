@@ -206,6 +206,15 @@
   padding: 0;
 }
 
+.card-wide .portfolio-img-project {
+  width: 240px;
+  height: 135px;
+  border-radius: 10px;
+  object-fit: cover;
+  object-position: center;
+  border: 1px solid rgba(64, 93, 114, 0.12);
+}
+
 /* ── AI badge ── */
 .ai-badge {
   display: inline-flex;
